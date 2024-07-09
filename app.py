@@ -69,7 +69,12 @@ for index, (col1, col2) in enumerate(rows):
                     fig = getattr(px, info["type"])(sales_data, x=info.get("x"), y=info.get("y"), title=info.get("title"), color=info.get("color"))
                 st.plotly_chart(fig, use_container_width=True)
             except KeyError:
-                st.write
+                st.write("Invalid chart configuration: ", info)
+    with col2:
+        info = charts_info[index * 2 + 1]
+        if "type" in info:
+            try:
+                if info["type"] == "pie"
 
 
 
