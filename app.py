@@ -16,5 +16,7 @@ st.markdown(
             text-align: center;
         }
         
-        /* A
+        /* Ad padding to the bordered container */
+        .bordered {
+            b
 
