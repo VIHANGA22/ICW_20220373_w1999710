@@ -74,7 +74,10 @@ for index, (col1, col2) in enumerate(rows):
         info = charts_info[index * 2 + 1]
         if "type" in info:
             try:
-                if info["type"] == "pie"
+                if info["type"] == "pie":
+                    fig = getattr(px, info["type"])(sales_data, names=info.get("names"), title=info.get("title"), hole=info.get("hole", 0.5))
+                elif info["type"] == "density_heatmap":
+                    s
 
 
 
