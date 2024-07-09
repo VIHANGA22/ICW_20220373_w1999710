@@ -39,7 +39,9 @@ st.markdown('<div class="center subheader"><h3>Analyze Your Sales Data<h3></div>
 sales_data = pd.read_excel("cleaned_dataset.xlsx", engine='openpyxl')
 # Define chart configurations
 charts_info = [
-    {
+    {"type": "box", "x": "Sub-Category", "y": "Quantity", "title": "Box Plot", "color": "Sub-Category"},
+    {"type": "bar", "x": "Ship Mode", "y": "Shipping Cost", "title": "Bar Chart", "color": "Ship Mode"},
+
 
 
 
