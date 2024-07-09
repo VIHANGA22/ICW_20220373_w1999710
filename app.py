@@ -84,7 +84,10 @@ for index, (col1, col2) in enumerate(rows):
                 else:
                     fig = getattr(px, info["type"])(sales_data, x=info.get("x"), y=info.get("y"), title=info.get("title"), color=info.get("color"))
                 st.plotly_chart(fig, use_container_width=True)
-            except KeyError
+            except KeyError:
+                st.write("Invalid chart configuration: ", info)
+# Close bordered container
+st.markdown("</div>", unsafe_allow_html=True)
 
 
 
