@@ -18,5 +18,8 @@ st.markdown(
         
         /* Ad padding to the bordered container */
         .bordered {
-            b
+            border: 2px solid #ddd;  /* Add a light gray border */
+            border-radius: 10px;  /* Add border radius for rounded corners */
+            padding: 20px;
+            m
 
