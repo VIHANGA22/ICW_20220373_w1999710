@@ -53,6 +53,13 @@ row3_col1, row3_col2 = st.columns(2)
 
 rows = [(row1_col1, row1_col2), (row2_col1, row2_col2), (row3_col1, row3_col2)]
 
+for index, (col1, col2) in enumerate(rows):
+    with col1:
+        info = charts_info[index * 2]
+        if "type" in info:
+            try:
+                if
+
 
 
 
