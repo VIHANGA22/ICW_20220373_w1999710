@@ -46,6 +46,8 @@ charts_info = [
     {"type": "area", "x": "Market", "y": "Profit", "title": "Area Chart"},
     {"type": "density_heatmap", "x": "Country", "y": "Sales", "title": "Heatmap of Top 10 Countries in Sales", "color_scale": "reds"}
 ]
+# Create and display charts in 3 rows with 2 graphs in each row
+row1_col1, row1_col2 = st.columns(2)
 
 
 
