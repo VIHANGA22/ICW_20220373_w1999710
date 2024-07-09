@@ -64,6 +64,9 @@ for index, (col1, col2) in enumerate(rows):
                     sales_by_country = sales_data.groupby('Country')['Sales'].sum().reset_index()
                     top_10_countries = sales_by_country.nlargest(10, 'Sales')
                     df_top_10_countries = sales_data[sales_data['Country'].isin(top_10_countries['Country'])]
+                    fig = getattr(px, info["type"])(df_top_10_countries, x=info.get("x"), y=info.get("y"), title=info.get("title"), color_continuous_scale=info.get("color_scale"))
+                else:
+                    f
 
 
 
