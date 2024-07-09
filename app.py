@@ -8,4 +8,8 @@ st.set_page_config(
     layout="wide"
 )
 # Custom CSS to style the dashboard
+st.markdown(
+    """
+    <style>
+        /* C
 
