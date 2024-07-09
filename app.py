@@ -51,6 +51,7 @@ row1_col1, row1_col2 = st.columns(2)
 row2_col1, row2_col2 = st.columns(2)
 row3_col1, row3_col2 = st.columns(2)
 
+rows = [(row1_col1, row1_col2), (row2_col1, row2_col2), (row3_col1, row3_col2)]
 
 
 
