@@ -21,5 +21,7 @@ st.markdown(
             border: 2px solid #ddd;  /* Add a light gray border */
             border-radius: 10px;  /* Add border radius for rounded corners */
             padding: 20px;
-            m
+            margin-bottom: 10px;  /* Add some space between elements */
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+            b
 
