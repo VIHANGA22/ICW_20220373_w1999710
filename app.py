@@ -66,7 +66,10 @@ for index, (col1, col2) in enumerate(rows):
                     df_top_10_countries = sales_data[sales_data['Country'].isin(top_10_countries['Country'])]
                     fig = getattr(px, info["type"])(df_top_10_countries, x=info.get("x"), y=info.get("y"), title=info.get("title"), color_continuous_scale=info.get("color_scale"))
                 else:
-                    f
+                    fig = getattr(px, info["type"])(sales_data, x=info.get("x"), y=info.get("y"), title=info.get("title"), color=info.get("color"))
+                st.plotly_chart(fig, use_container_width=True)
+            except KeyError:
+                st.write
 
 
 
