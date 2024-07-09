@@ -11,5 +11,10 @@ st.set_page_config(
 st.markdown(
     """
     <style>
-        /* C
+        /* Center align the main header and subheader */
+        .center {
+            text-align: center;
+        }
+        
+        /* A
 
