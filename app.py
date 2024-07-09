@@ -61,7 +61,9 @@ for index, (col1, col2) in enumerate(rows):
                 if info["type"] == "pie":
                     fig = getattr(px, info["type"])(sales_data, names=info.get("names"), title=info.get("title"), hole=info.get("hole", 0.5))
                 elif info["type"] == "density_heatmap":
-                    s
+                    sales_by_country = sales_data.groupby('Country')['Sales'].sum().reset_index()
+                    top_10_countries = sales_by_country.nlargest(10, 'Sales')
+                    df_top_10_countries = sales_data[sales_data['Country'].isin(top_10_countries['Country'])]
 
 
 
